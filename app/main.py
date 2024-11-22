@@ -111,9 +111,10 @@ def main():
             logger.debug(f"Markdown content: {markdown_content}")
             logger.info(f"Generated Markdown for AWS ORG: {aws_account_name}")
         
-        # Create new document in Outline
-        GetOutlineClient.create_document(parent_id, aws_account_name, markdown_content)
-        logger.info(f"Created {aws_account_name} doc successfully under parent doc: {GETOUTLINE_DOCUMENT_ID}")
+            # Create new document in Outline
+            GetOutlineClient.create_document(parent_id, aws_account_name, markdown_content)
+            logger.info(f"Created {aws_account_name} doc successfully under parent doc: {GETOUTLINE_DOCUMENT_ID}")
+            
         logger.info("Script execution completed successfully.")
     except Exception as e:
         logger.error(f"Script execution failed: {e}")
