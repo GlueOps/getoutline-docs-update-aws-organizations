@@ -6,7 +6,7 @@ import glueops.setup_logging
 import glueops.getoutline
 from aws import AWSOrganization
 
-GETOUTLINE_API_URL = "https://app.getoutline.com"
+GETOUTLINE_API_URL = "https://glueops.getoutline.com"
 REQUIRED_ENV_VARS = [
     "GETOUTLINE_DOCUMENT_ID",
     "GETOUTLINE_API_TOKEN",
